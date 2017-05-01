@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180915081EA9F3AA001902DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180915071EA9F3AA001902DD /* main.m */; };
-		1809150B1EA9F3AA001902DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809150A1EA9F3AA001902DD /* AppDelegate.m */; };
-		1809150E1EA9F3AA001902DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809150D1EA9F3AA001902DD /* ViewController.m */; };
+		18068DE41EB5DC29004B255E /* YPHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18068DE31EB5DC29004B255E /* YPHomeModel.m */; };
+		18068DE81EB5F158004B255E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 18068DE71EB5F158004B255E /* background.png */; };
+		1806D0B51EB0C8A300FA9005 /* YPHomeBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D0B41EB0C8A300FA9005 /* YPHomeBannerView.m */; };
+		1806F8281EB3769500FE0E07 /* YPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806F8271EB3769500FE0E07 /* YPHomeViewController.m */; };
+		1807BF911EADFA19003AD969 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1807BF901EADFA19003AD969 /* CoreLocation.framework */; };
 		180915111EA9F3AA001902DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809150F1EA9F3AA001902DD /* Main.storyboard */; };
 		180915131EA9F3AA001902DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180915121EA9F3AA001902DD /* Assets.xcassets */; };
 		180915161EA9F3AA001902DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180915141EA9F3AA001902DD /* LaunchScreen.storyboard */; };
 		180915211EA9F3AA001902DD /* YPMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180915201EA9F3AA001902DD /* YPMovieTests.m */; };
 		1809152C1EA9F3AA001902DD /* YPMovieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809152B1EA9F3AA001902DD /* YPMovieUITests.m */; };
+		180915511EA9F453001902DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809154B1EA9F453001902DD /* AppDelegate.m */; };
+		180915521EA9F453001902DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809154C1EA9F453001902DD /* main.m */; };
+		180915611EA9F87A001902DD /* YPMainTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180915601EA9F87A001902DD /* YPMainTabbarViewController.m */; };
+		180915641EA9F88D001902DD /* YPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180915631EA9F88D001902DD /* YPMeViewController.m */; };
+		180915671EA9F899001902DD /* YPCinemaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180915661EA9F899001902DD /* YPCinemaViewController.m */; };
+		1809156A1EA9F8A5001902DD /* YPTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180915691EA9F8A5001902DD /* YPTicketViewController.m */; };
+		180915801EAA311A001902DD /* CityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180915741EAA311A001902DD /* CityData.plist */; };
+		180915811EAA311A001902DD /* TLCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 180915761EAA311A001902DD /* TLCity.m */; };
+		180915821EAA311A001902DD /* TLCityGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180915781EAA311A001902DD /* TLCityGroupCell.m */; };
+		180915831EAA311A001902DD /* TLCityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809157A1EAA311A001902DD /* TLCityHeaderView.m */; };
+		180915841EAA311A001902DD /* TLCityPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809157C1EAA311A001902DD /* TLCityPickerController.m */; };
+		180915851EAA311A001902DD /* TLCityPickerSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809157F1EAA311A001902DD /* TLCityPickerSearchResultController.m */; };
+		185ED9B21EB739C8003FE101 /* YPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185ED9B11EB739C8003FE101 /* YPHomeTableViewCell.m */; };
+		185ED9B51EB78513003FE101 /* YPHomeSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185ED9B41EB78513003FE101 /* YPHomeSectionTableViewCell.m */; };
+		185ED9B71EB78D85003FE101 /* topic.png in Resources */ = {isa = PBXBuildFile; fileRef = 185ED9B61EB78D85003FE101 /* topic.png */; };
+		18E692531EB37C7600FAA646 /* YPData.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E692521EB37C7600FAA646 /* YPData.json */; };
+		1B2DB8E46D7C5A70AE7206B4 /* libPods-YPMovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C711BAA6E2347D3AFFE2442 /* libPods-YPMovie.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18068DE21EB5DC29004B255E /* YPHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeModel.h; sourceTree = "<group>"; };
+		18068DE31EB5DC29004B255E /* YPHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeModel.m; sourceTree = "<group>"; };
+		18068DE71EB5F158004B255E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		1806D0B31EB0C8A300FA9005 /* YPHomeBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeBannerView.h; sourceTree = "<group>"; };
+		1806D0B41EB0C8A300FA9005 /* YPHomeBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeBannerView.m; sourceTree = "<group>"; };
+		1806F8261EB3769500FE0E07 /* YPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeViewController.h; sourceTree = "<group>"; };
+		1806F8271EB3769500FE0E07 /* YPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeViewController.m; sourceTree = "<group>"; };
+		1807BF901EADFA19003AD969 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		180915031EA9F3AA001902DD /* YPMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		180915071EA9F3AA001902DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		180915091EA9F3AA001902DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1809150A1EA9F3AA001902DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1809150C1EA9F3AA001902DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1809150D1EA9F3AA001902DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		180915101EA9F3AA001902DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		180915121EA9F3AA001902DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180915151EA9F3AA001902DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +73,39 @@
 		180915271EA9F3AA001902DD /* YPMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1809152B1EA9F3AA001902DD /* YPMovieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPMovieUITests.m; sourceTree = "<group>"; };
 		1809152D1EA9F3AA001902DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1809154A1EA9F453001902DD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1809154B1EA9F453001902DD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1809154C1EA9F453001902DD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1809155F1EA9F87A001902DD /* YPMainTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPMainTabbarViewController.h; sourceTree = "<group>"; };
+		180915601EA9F87A001902DD /* YPMainTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPMainTabbarViewController.m; sourceTree = "<group>"; };
+		180915621EA9F88D001902DD /* YPMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPMeViewController.h; sourceTree = "<group>"; };
+		180915631EA9F88D001902DD /* YPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPMeViewController.m; sourceTree = "<group>"; };
+		180915651EA9F899001902DD /* YPCinemaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCinemaViewController.h; sourceTree = "<group>"; };
+		180915661EA9F899001902DD /* YPCinemaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCinemaViewController.m; sourceTree = "<group>"; };
+		180915681EA9F8A5001902DD /* YPTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTicketViewController.h; sourceTree = "<group>"; };
+		180915691EA9F8A5001902DD /* YPTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTicketViewController.m; sourceTree = "<group>"; };
+		1809156E1EAA05D7001902DD /* YPPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPCH.pch; sourceTree = "<group>"; };
+		180915741EAA311A001902DD /* CityData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityData.plist; sourceTree = "<group>"; };
+		180915751EAA311A001902DD /* TLCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCity.h; sourceTree = "<group>"; };
+		180915761EAA311A001902DD /* TLCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCity.m; sourceTree = "<group>"; };
+		180915771EAA311A001902DD /* TLCityGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCityGroupCell.h; sourceTree = "<group>"; };
+		180915781EAA311A001902DD /* TLCityGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCityGroupCell.m; sourceTree = "<group>"; };
+		180915791EAA311A001902DD /* TLCityHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCityHeaderView.h; sourceTree = "<group>"; };
+		1809157A1EAA311A001902DD /* TLCityHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCityHeaderView.m; sourceTree = "<group>"; };
+		1809157B1EAA311A001902DD /* TLCityPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCityPickerController.h; sourceTree = "<group>"; };
+		1809157C1EAA311A001902DD /* TLCityPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCityPickerController.m; sourceTree = "<group>"; };
+		1809157D1EAA311A001902DD /* TLCityPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCityPickerDelegate.h; sourceTree = "<group>"; };
+		1809157E1EAA311A001902DD /* TLCityPickerSearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCityPickerSearchResultController.h; sourceTree = "<group>"; };
+		1809157F1EAA311A001902DD /* TLCityPickerSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCityPickerSearchResultController.m; sourceTree = "<group>"; };
+		185ED9B01EB739C8003FE101 /* YPHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeTableViewCell.h; sourceTree = "<group>"; };
+		185ED9B11EB739C8003FE101 /* YPHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeTableViewCell.m; sourceTree = "<group>"; };
+		185ED9B31EB78513003FE101 /* YPHomeSectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeSectionTableViewCell.h; sourceTree = "<group>"; };
+		185ED9B41EB78513003FE101 /* YPHomeSectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeSectionTableViewCell.m; sourceTree = "<group>"; };
+		185ED9B61EB78D85003FE101 /* topic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topic.png; sourceTree = "<group>"; };
+		18E692521EB37C7600FAA646 /* YPData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YPData.json; sourceTree = "<group>"; };
+		6C711BAA6E2347D3AFFE2442 /* libPods-YPMovie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPMovie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F813589EF0B2F5DDBC0BE24 /* Pods-YPMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPMovie/Pods-YPMovie.release.xcconfig"; sourceTree = "<group>"; };
+		88C3C1A68A7A8659A99C9C7F /* Pods-YPMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPMovie/Pods-YPMovie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1807BF911EADFA19003AD969 /* CoreLocation.framework in Frameworks */,
+				1B2DB8E46D7C5A70AE7206B4 /* libPods-YPMovie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1806F8251EB3769500FE0E07 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				1806F8261EB3769500FE0E07 /* YPHomeViewController.h */,
+				1806F8271EB3769500FE0E07 /* YPHomeViewController.m */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
 		180914FA1EA9F3AA001902DD = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +151,8 @@
 				1809151F1EA9F3AA001902DD /* YPMovieTests */,
 				1809152A1EA9F3AA001902DD /* YPMovieUITests */,
 				180915041EA9F3AA001902DD /* Products */,
+				E8427B2D05EC599A2B14D7AE /* Pods */,
+				9B420357A25F6D75DBD6E241 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +169,13 @@
 		180915051EA9F3AA001902DD /* YPMovie */ = {
 			isa = PBXGroup;
 			children = (
-				180915091EA9F3AA001902DD /* AppDelegate.h */,
-				1809150A1EA9F3AA001902DD /* AppDelegate.m */,
-				1809150C1EA9F3AA001902DD /* ViewController.h */,
-				1809150D1EA9F3AA001902DD /* ViewController.m */,
-				1809150F1EA9F3AA001902DD /* Main.storyboard */,
-				180915121EA9F3AA001902DD /* Assets.xcassets */,
-				180915141EA9F3AA001902DD /* LaunchScreen.storyboard */,
-				180915171EA9F3AA001902DD /* Info.plist */,
+				180915721EAA310B001902DD /* Libs */,
+				180915411EA9F453001902DD /* Main */,
+				180915451EA9F453001902DD /* Me */,
+				180915391EA9F453001902DD /* Cinema */,
+				1809154D1EA9F453001902DD /* Ticket */,
+				1809153D1EA9F453001902DD /* Home */,
+				180915491EA9F453001902DD /* Other */,
 				180915061EA9F3AA001902DD /* Supporting Files */,
 			);
 			path = YPMovie;
@@ -117,7 +184,14 @@
 		180915061EA9F3AA001902DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				180915071EA9F3AA001902DD /* main.m */,
+				185ED9B61EB78D85003FE101 /* topic.png */,
+				18068DE71EB5F158004B255E /* background.png */,
+				1809150F1EA9F3AA001902DD /* Main.storyboard */,
+				180915121EA9F3AA001902DD /* Assets.xcassets */,
+				180915141EA9F3AA001902DD /* LaunchScreen.storyboard */,
+				180915171EA9F3AA001902DD /* Info.plist */,
+				1809156E1EAA05D7001902DD /* YPPCH.pch */,
+				18E692521EB37C7600FAA646 /* YPData.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +214,225 @@
 			path = YPMovieUITests;
 			sourceTree = "<group>";
 		};
+		180915391EA9F453001902DD /* Cinema */ = {
+			isa = PBXGroup;
+			children = (
+				1809153A1EA9F453001902DD /* contriller */,
+				1809153B1EA9F453001902DD /* model */,
+				1809153C1EA9F453001902DD /* view */,
+			);
+			path = Cinema;
+			sourceTree = "<group>";
+		};
+		1809153A1EA9F453001902DD /* contriller */ = {
+			isa = PBXGroup;
+			children = (
+				180915651EA9F899001902DD /* YPCinemaViewController.h */,
+				180915661EA9F899001902DD /* YPCinemaViewController.m */,
+			);
+			path = contriller;
+			sourceTree = "<group>";
+		};
+		1809153B1EA9F453001902DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1809153C1EA9F453001902DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1809153D1EA9F453001902DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1806F8251EB3769500FE0E07 /* control */,
+				1809153F1EA9F453001902DD /* model */,
+				180915401EA9F453001902DD /* view */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1809153F1EA9F453001902DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18068DE21EB5DC29004B255E /* YPHomeModel.h */,
+				18068DE31EB5DC29004B255E /* YPHomeModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		180915401EA9F453001902DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1806D0B31EB0C8A300FA9005 /* YPHomeBannerView.h */,
+				1806D0B41EB0C8A300FA9005 /* YPHomeBannerView.m */,
+				185ED9B01EB739C8003FE101 /* YPHomeTableViewCell.h */,
+				185ED9B11EB739C8003FE101 /* YPHomeTableViewCell.m */,
+				185ED9B31EB78513003FE101 /* YPHomeSectionTableViewCell.h */,
+				185ED9B41EB78513003FE101 /* YPHomeSectionTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		180915411EA9F453001902DD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				180915421EA9F453001902DD /* contriller */,
+				180915431EA9F453001902DD /* model */,
+				180915441EA9F453001902DD /* view */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		180915421EA9F453001902DD /* contriller */ = {
+			isa = PBXGroup;
+			children = (
+				1809155F1EA9F87A001902DD /* YPMainTabbarViewController.h */,
+				180915601EA9F87A001902DD /* YPMainTabbarViewController.m */,
+			);
+			path = contriller;
+			sourceTree = "<group>";
+		};
+		180915431EA9F453001902DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		180915441EA9F453001902DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		180915451EA9F453001902DD /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				180915461EA9F453001902DD /* contriller */,
+				180915471EA9F453001902DD /* model */,
+				180915481EA9F453001902DD /* view */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		180915461EA9F453001902DD /* contriller */ = {
+			isa = PBXGroup;
+			children = (
+				180915621EA9F88D001902DD /* YPMeViewController.h */,
+				180915631EA9F88D001902DD /* YPMeViewController.m */,
+			);
+			path = contriller;
+			sourceTree = "<group>";
+		};
+		180915471EA9F453001902DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		180915481EA9F453001902DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		180915491EA9F453001902DD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1809154A1EA9F453001902DD /* AppDelegate.h */,
+				1809154B1EA9F453001902DD /* AppDelegate.m */,
+				1809154C1EA9F453001902DD /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1809154D1EA9F453001902DD /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				1809154E1EA9F453001902DD /* contriller */,
+				1809154F1EA9F453001902DD /* model */,
+				180915501EA9F453001902DD /* view */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		1809154E1EA9F453001902DD /* contriller */ = {
+			isa = PBXGroup;
+			children = (
+				180915681EA9F8A5001902DD /* YPTicketViewController.h */,
+				180915691EA9F8A5001902DD /* YPTicketViewController.m */,
+			);
+			path = contriller;
+			sourceTree = "<group>";
+		};
+		1809154F1EA9F453001902DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		180915501EA9F453001902DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		180915721EAA310B001902DD /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				180915731EAA311A001902DD /* TLCityPicker */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		180915731EAA311A001902DD /* TLCityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				180915741EAA311A001902DD /* CityData.plist */,
+				180915751EAA311A001902DD /* TLCity.h */,
+				180915761EAA311A001902DD /* TLCity.m */,
+				180915771EAA311A001902DD /* TLCityGroupCell.h */,
+				180915781EAA311A001902DD /* TLCityGroupCell.m */,
+				180915791EAA311A001902DD /* TLCityHeaderView.h */,
+				1809157A1EAA311A001902DD /* TLCityHeaderView.m */,
+				1809157B1EAA311A001902DD /* TLCityPickerController.h */,
+				1809157C1EAA311A001902DD /* TLCityPickerController.m */,
+				1809157D1EAA311A001902DD /* TLCityPickerDelegate.h */,
+				1809157E1EAA311A001902DD /* TLCityPickerSearchResultController.h */,
+				1809157F1EAA311A001902DD /* TLCityPickerSearchResultController.m */,
+			);
+			path = TLCityPicker;
+			sourceTree = "<group>";
+		};
+		9B420357A25F6D75DBD6E241 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1807BF901EADFA19003AD969 /* CoreLocation.framework */,
+				6C711BAA6E2347D3AFFE2442 /* libPods-YPMovie.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8427B2D05EC599A2B14D7AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88C3C1A68A7A8659A99C9C7F /* Pods-YPMovie.debug.xcconfig */,
+				7F813589EF0B2F5DDBC0BE24 /* Pods-YPMovie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +440,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180915301EA9F3AA001902DD /* Build configuration list for PBXNativeTarget "YPMovie" */;
 			buildPhases = (
+				AA85CA083C5AC83412DB0500 /* [CP] Check Pods Manifest.lock */,
 				180914FF1EA9F3AA001902DD /* Sources */,
 				180915001EA9F3AA001902DD /* Frameworks */,
 				180915011EA9F3AA001902DD /* Resources */,
+				8B593C29D31B0C852FF72579 /* [CP] Embed Pods Frameworks */,
+				6D860E3962812F534F245EAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +505,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = KCYZH97276;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					1809151B1EA9F3AA001902DD = {
 						CreatedOnToolsVersion = 8.1;
@@ -250,8 +551,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				180915161EA9F3AA001902DD /* LaunchScreen.storyboard in Resources */,
+				18068DE81EB5F158004B255E /* background.png in Resources */,
+				185ED9B71EB78D85003FE101 /* topic.png in Resources */,
 				180915131EA9F3AA001902DD /* Assets.xcassets in Resources */,
 				180915111EA9F3AA001902DD /* Main.storyboard in Resources */,
+				18E692531EB37C7600FAA646 /* YPData.json in Resources */,
+				180915801EAA311A001902DD /* CityData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,14 +576,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6D860E3962812F534F245EAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPMovie/Pods-YPMovie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B593C29D31B0C852FF72579 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPMovie/Pods-YPMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA85CA083C5AC83412DB0500 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		180914FF1EA9F3AA001902DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1809150E1EA9F3AA001902DD /* ViewController.m in Sources */,
-				1809150B1EA9F3AA001902DD /* AppDelegate.m in Sources */,
-				180915081EA9F3AA001902DD /* main.m in Sources */,
+				180915821EAA311A001902DD /* TLCityGroupCell.m in Sources */,
+				185ED9B51EB78513003FE101 /* YPHomeSectionTableViewCell.m in Sources */,
+				180915671EA9F899001902DD /* YPCinemaViewController.m in Sources */,
+				180915841EAA311A001902DD /* TLCityPickerController.m in Sources */,
+				1806D0B51EB0C8A300FA9005 /* YPHomeBannerView.m in Sources */,
+				180915521EA9F453001902DD /* main.m in Sources */,
+				180915641EA9F88D001902DD /* YPMeViewController.m in Sources */,
+				180915851EAA311A001902DD /* TLCityPickerSearchResultController.m in Sources */,
+				1809156A1EA9F8A5001902DD /* YPTicketViewController.m in Sources */,
+				1806F8281EB3769500FE0E07 /* YPHomeViewController.m in Sources */,
+				180915511EA9F453001902DD /* AppDelegate.m in Sources */,
+				185ED9B21EB739C8003FE101 /* YPHomeTableViewCell.m in Sources */,
+				180915811EAA311A001902DD /* TLCity.m in Sources */,
+				180915831EAA311A001902DD /* TLCityHeaderView.m in Sources */,
+				180915611EA9F87A001902DD /* YPMainTabbarViewController.m in Sources */,
+				18068DE41EB5DC29004B255E /* YPHomeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +789,12 @@
 		};
 		180915311EA9F3AA001902DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C3C1A68A7A8659A99C9C7F /* Pods-YPMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KCYZH97276;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YPMovie/YPPCH.pch";
 				INFOPLIST_FILE = YPMovie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SP.YPMovie;
@@ -435,9 +804,12 @@
 		};
 		180915321EA9F3AA001902DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F813589EF0B2F5DDBC0BE24 /* Pods-YPMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KCYZH97276;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YPMovie/YPPCH.pch";
 				INFOPLIST_FILE = YPMovie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SP.YPMovie;
@@ -514,6 +886,7 @@
 				180915321EA9F3AA001902DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180915331EA9F3AA001902DD /* Build configuration list for PBXNativeTarget "YPMovieTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +895,7 @@
 				180915351EA9F3AA001902DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180915361EA9F3AA001902DD /* Build configuration list for PBXNativeTarget "YPMovieUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +904,7 @@
 				180915381EA9F3AA001902DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

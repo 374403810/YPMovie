@@ -1,0 +1,21 @@
+//
+//  YPPCH.pch
+//  YPMovie
+//
+//  Created by apple on 2017/4/21.
+//  Copyright © 2017年 SP. All rights reserved.
+//
+
+#ifndef YPPCH_pch
+#define YPPCH_pch
+//颜色
+#define YPCOLOR(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
+#define YPSYSTEMCOLOR(name) [UIColor name]
+
+//屏幕宽和高
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+//背景图片
+#define BACKGROUNDIMAGE @"background.png"
+#endif /* YPPCH_pch */
