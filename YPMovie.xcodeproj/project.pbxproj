@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180665EF1EB8622500D6BF1C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 180665EE1EB8622500D6BF1C /* arrow.png */; };
 		18068DE41EB5DC29004B255E /* YPHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18068DE31EB5DC29004B255E /* YPHomeModel.m */; };
 		18068DE81EB5F158004B255E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 18068DE71EB5F158004B255E /* background.png */; };
 		1806D0B51EB0C8A300FA9005 /* YPHomeBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D0B41EB0C8A300FA9005 /* YPHomeBannerView.m */; };
@@ -29,6 +30,8 @@
 		180915831EAA311A001902DD /* TLCityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809157A1EAA311A001902DD /* TLCityHeaderView.m */; };
 		180915841EAA311A001902DD /* TLCityPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809157C1EAA311A001902DD /* TLCityPickerController.m */; };
 		180915851EAA311A001902DD /* TLCityPickerSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809157F1EAA311A001902DD /* TLCityPickerSearchResultController.m */; };
+		180A81471EB8918A00A62946 /* YPHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A81461EB8918A00A62946 /* YPHomeDetailViewController.m */; };
+		180A814F1EB8C95F00A62946 /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 180A814E1EB8C95F00A62946 /* arrow1.png */; };
 		185ED9B21EB739C8003FE101 /* YPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185ED9B11EB739C8003FE101 /* YPHomeTableViewCell.m */; };
 		185ED9B51EB78513003FE101 /* YPHomeSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185ED9B41EB78513003FE101 /* YPHomeSectionTableViewCell.m */; };
 		185ED9B71EB78D85003FE101 /* topic.png in Resources */ = {isa = PBXBuildFile; fileRef = 185ED9B61EB78D85003FE101 /* topic.png */; };
@@ -54,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180665EE1EB8622500D6BF1C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		18068DE21EB5DC29004B255E /* YPHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeModel.h; sourceTree = "<group>"; };
 		18068DE31EB5DC29004B255E /* YPHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeModel.m; sourceTree = "<group>"; };
 		18068DE71EB5F158004B255E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
@@ -97,6 +101,9 @@
 		1809157D1EAA311A001902DD /* TLCityPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCityPickerDelegate.h; sourceTree = "<group>"; };
 		1809157E1EAA311A001902DD /* TLCityPickerSearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCityPickerSearchResultController.h; sourceTree = "<group>"; };
 		1809157F1EAA311A001902DD /* TLCityPickerSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCityPickerSearchResultController.m; sourceTree = "<group>"; };
+		180A81451EB8918A00A62946 /* YPHomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeDetailViewController.h; sourceTree = "<group>"; };
+		180A81461EB8918A00A62946 /* YPHomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeDetailViewController.m; sourceTree = "<group>"; };
+		180A814E1EB8C95F00A62946 /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1.png; sourceTree = "<group>"; };
 		185ED9B01EB739C8003FE101 /* YPHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeTableViewCell.h; sourceTree = "<group>"; };
 		185ED9B11EB739C8003FE101 /* YPHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeTableViewCell.m; sourceTree = "<group>"; };
 		185ED9B31EB78513003FE101 /* YPHomeSectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeSectionTableViewCell.h; sourceTree = "<group>"; };
@@ -140,6 +147,8 @@
 			children = (
 				1806F8261EB3769500FE0E07 /* YPHomeViewController.h */,
 				1806F8271EB3769500FE0E07 /* YPHomeViewController.m */,
+				180A81451EB8918A00A62946 /* YPHomeDetailViewController.h */,
+				180A81461EB8918A00A62946 /* YPHomeDetailViewController.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -184,6 +193,8 @@
 		180915061EA9F3AA001902DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				180A814E1EB8C95F00A62946 /* arrow1.png */,
+				180665EE1EB8622500D6BF1C /* arrow.png */,
 				185ED9B61EB78D85003FE101 /* topic.png */,
 				18068DE71EB5F158004B255E /* background.png */,
 				1809150F1EA9F3AA001902DD /* Main.storyboard */,
@@ -551,12 +562,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				180915161EA9F3AA001902DD /* LaunchScreen.storyboard in Resources */,
+				180A814F1EB8C95F00A62946 /* arrow1.png in Resources */,
 				18068DE81EB5F158004B255E /* background.png in Resources */,
 				185ED9B71EB78D85003FE101 /* topic.png in Resources */,
 				180915131EA9F3AA001902DD /* Assets.xcassets in Resources */,
 				180915111EA9F3AA001902DD /* Main.storyboard in Resources */,
 				18E692531EB37C7600FAA646 /* YPData.json in Resources */,
 				180915801EAA311A001902DD /* CityData.plist in Resources */,
+				180665EF1EB8622500D6BF1C /* arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +657,7 @@
 				180915811EAA311A001902DD /* TLCity.m in Sources */,
 				180915831EAA311A001902DD /* TLCityHeaderView.m in Sources */,
 				180915611EA9F87A001902DD /* YPMainTabbarViewController.m in Sources */,
+				180A81471EB8918A00A62946 /* YPHomeDetailViewController.m in Sources */,
 				18068DE41EB5DC29004B255E /* YPHomeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

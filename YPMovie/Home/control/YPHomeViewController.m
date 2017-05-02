@@ -14,6 +14,7 @@
 #import "YPHomeBannerView.h"
 #import "YPHomeTableViewCell.h"
 #import "YPHomeSectionTableViewCell.h"
+#import "YPHomeDetailViewController.h"
 
 @interface YPHomeViewController ()<TLCityPickerDelegate,CLLocationManagerDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -143,7 +144,7 @@
                 cityStr = placemark.administrativeArea;
             }            
             //显示定位城市
-            [self.location setTitle:@"西安" forState:UIControlStateNormal];
+            [self.location setTitle:@"西安市" forState:UIControlStateNormal];
             //遍历城市名plist
             NSArray * cityPlistArray = [NSArray arrayWithContentsOfFile:@"CityData.plist"];
             for (NSDictionary * itemDic in cityPlistArray) {
@@ -164,7 +165,7 @@
 
 #pragma mark - setTableView
 - (void)setTableView{
-    UITableView * tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT) style:UITableViewStyleGrouped];
+    UITableView * tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREENWIDTH, SCREENHEIGHT-64-49) style:UITableViewStyleGrouped];
     tableview.showsVerticalScrollIndicator=NO;
     tableview.separatorStyle=UITableViewCellSeparatorStyleNone;//去除分割线
     tableview.delegate=self;
@@ -225,7 +226,10 @@
     [header.textLabel setTextColor:YPSYSTEMCOLOR(blackColor)];
     header.textLabel.font=[UIFont systemFontOfSize:14];
     //backgroundColor
-    header.contentView.backgroundColor=YPCOLOR(242, 238, 219);
+    header.contentView.backgroundColor=YPCOLOR(248, 243, 253);
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.1;
 }
 #pragma mark - 返回每组头标题名称
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
@@ -260,6 +264,7 @@
     self.location=location;
     location.titleLabel.textAlignment=NSTextAlignmentRight;
     location.titleLabel.textColor=YPSYSTEMCOLOR(whiteColor);
+    location.titleLabel.font=[UIFont systemFontOfSize:15];
     [location addTarget:self action:@selector(locationTouch) forControlEvents:UIControlEventTouchUpInside];
     [nav addSubview:location];
     
@@ -287,6 +292,13 @@
         
     }];
 }
+#pragma mark - 跳转详情界面
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    YPHomeDetailViewController * detailController = [[YPHomeDetailViewController alloc]init];
+    YPHome * home = self.dataArray[indexPath.section][indexPath.row];
+    detailController.home=home;
+    [self.navigationController pushViewController:detailController animated:YES];
+}
 #pragma mark - TLCityDelegate
 - (void) cityPickerController:(TLCityPickerController *)cityPickerViewController didSelectCity:(TLCity *)city
 {
@@ -306,19 +318,7 @@
 - (void)tap{
     [self locationTouch];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden=NO;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

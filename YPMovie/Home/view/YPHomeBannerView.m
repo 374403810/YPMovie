@@ -26,7 +26,7 @@
     self = [super init];
     if (self) {
         self.frame=CGRectMake(0, 0, SCREENWIDTH, 200);
-        //1
+        //1 
         UIScrollView * scrollview = [[UIScrollView alloc]init];
         self.scrollview=scrollview;
         [self addSubview:scrollview];
@@ -93,7 +93,7 @@
         imageview.userInteractionEnabled=YES;
         [imageview addGestureRecognizer:tap];
     }
-    //    延迟0.5添加定时器
+    // 延迟0.5添加定时器
     [self performSelector:@selector(createTimer) withObject:nil afterDelay:0.50];
 }
 -(void)createTimer{
@@ -105,7 +105,7 @@
 #pragma mark - UIScrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (self.flag) {
-        if (self.scrollview.contentOffset.x<self.location) {//    向右滑
+        if (self.scrollview.contentOffset.x<self.location) {// 向右滑
             if (self.scrollview.contentOffset.x<=0) {
                 self.location = self.bannerArray.count * self.frame.size.width;
                 [self.scrollview setContentOffset:CGPointMake(self.bannerArray.count * self.frame.size.width, 0) animated:NO];
@@ -125,19 +125,14 @@
     [self.timer invalidate];
     self.timer=nil;
 }
--(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{//将要停止拖拽
-    
-
-}
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{//停止拖拽
     self.location=self.scrollview.contentOffset.x;
     [self createTimer];
 }
 #pragma mark - time
 -(void)time{
-    
     NSInteger page = self.scrollview.contentOffset.x/self.frame.size.width;
-    
+    //开始下一页
     [self.scrollview setContentOffset:CGPointMake((page+1)*self.frame.size.width, 0) animated:YES];
     if (page==self.bannerArray.count) {
         self.scrollview.contentOffset=CGPointMake(0, 0);

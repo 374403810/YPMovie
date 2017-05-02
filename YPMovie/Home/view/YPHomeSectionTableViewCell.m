@@ -8,6 +8,8 @@
 
 #import "YPHomeSectionTableViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <Masonry/Masonry.h>
+
 @interface YPHomeSectionTableViewCell()
 
 @property(nonatomic,strong) UIImageView * imageview;
@@ -24,23 +26,40 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.selectionStyle=UITableViewCellEditingStyleNone;
-        self.backgroundColor=YPCOLOR(242, 238, 219);
+        self.backgroundColor=YPCOLOR(248, 243, 253);
+        __weak typeof(self) weakSelf = self;
+        
         //1.背景
-        UIView * backView = [[UIView alloc]initWithFrame:CGRectMake(10, 10, SCREENWIDTH-20, 250-20)];
+        UIView * backView = [[UIView alloc]init];
         backView.backgroundColor=YPSYSTEMCOLOR(whiteColor);
         [self addSubview:backView];
+        [backView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(weakSelf).insets(UIEdgeInsetsMake(10, 10, 10, 10));
+        }];
         //2.图片
-        UIImageView * imageview = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, backView.frame.size.width-20, backView.frame.size.height-20)];
+        UIImageView * imageview = [[UIImageView alloc]init];
         self.imageview=imageview;
         [backView addSubview:imageview];
+        [imageview mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(backView).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        }];
         //3.标题
-        UILabel * title = [[UILabel alloc]initWithFrame:CGRectMake(0, imageview.frame.size.height/2-20, imageview.frame.size.width, 50)];
+        UILabel * title = [[UILabel alloc]init];
         self.title=title;
         [imageview addSubview:title];
+        [title mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(imageview);
+        }];
         //4.专题
-        UIImageView * topic = [[UIImageView alloc]initWithFrame:CGRectMake(5, 5, 100, 40)];
+        UIImageView * topic = [[UIImageView alloc]init];
         self.topic=topic;
         [imageview addSubview:topic];
+        [topic mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(imageview.mas_left).offset(5);
+            make.top.equalTo(imageview.mas_top).offset(5);
+            make.width.mas_equalTo(100);
+            make.height.mas_equalTo(40);
+        }];
     }
     return self;
 }
