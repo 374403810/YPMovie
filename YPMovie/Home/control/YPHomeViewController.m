@@ -15,8 +15,9 @@
 #import "YPHomeTableViewCell.h"
 #import "YPHomeSectionTableViewCell.h"
 #import "YPHomeDetailViewController.h"
+#import "YPHomeReserveViewController.h"
 
-@interface YPHomeViewController ()<TLCityPickerDelegate,CLLocationManagerDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface YPHomeViewController ()<TLCityPickerDelegate,CLLocationManagerDelegate,UITableViewDelegate,UITableViewDataSource,turnToDetail,turnToReserve>
 
 @property(nonatomic,strong) UIButton * location;
 
@@ -175,6 +176,7 @@
     //设置banner视图
     YPHomeBannerView * bannerView = [[YPHomeBannerView alloc]init];
     bannerView.bannerArray=self.bannerArray;
+    bannerView.delegate=self;
     tableview.tableHeaderView=bannerView;
 
 }
@@ -209,6 +211,7 @@
         }
         YPHome * home = self.dataArray[indexPath.section][indexPath.row];
         cell.home=home;
+        cell.delegate=self;
         return cell;
     }else{
         YPHomeSectionTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:secondCell];
@@ -298,6 +301,18 @@
     YPHome * home = self.dataArray[indexPath.section][indexPath.row];
     detailController.home=home;
     [self.navigationController pushViewController:detailController animated:YES];
+}
+#pragma mark - 轮播图跳转界面
+-(void)turnToDetailPage:(id)obj{
+    YPHomeDetailViewController * detailController = [[YPHomeDetailViewController alloc]init];
+    detailController.home=obj;
+    [self.navigationController pushViewController:detailController animated:YES];
+}
+#pragma mark - 预定cell跳转
+-(void)turnToReservePage:(id)obj{
+    YPHomeReserveViewController * reserveController = [[YPHomeReserveViewController alloc]init];
+    reserveController.home=obj;
+    [self.navigationController pushViewController:reserveController animated:YES];
 }
 #pragma mark - TLCityDelegate
 - (void) cityPickerController:(TLCityPickerController *)cityPickerViewController didSelectCity:(TLCity *)city

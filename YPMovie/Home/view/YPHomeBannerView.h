@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YPHomeModel.h"
+
+@protocol turnToDetail<NSObject>
+
+-(void)turnToDetailPage:(id)obj;
+
+@end
 
 @interface YPHomeBannerView : UIView
 
 @property(nonatomic,strong) NSMutableArray * bannerArray;
 
+@property(nonatomic,strong) id<turnToDetail>delegate;
 
 @end

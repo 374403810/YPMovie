@@ -113,6 +113,7 @@
         }];
         resever.layer.borderWidth=0.5;
         resever.layer.borderColor=YPSYSTEMCOLOR(redColor).CGColor;
+        [resever addTarget:self action:@selector(reserveTouch) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
@@ -142,5 +143,9 @@
     [self.resever setTitle:@"预定" forState:UIControlStateNormal];
     [self.resever setTitleColor:YPSYSTEMCOLOR(redColor) forState:UIControlStateNormal];
     self.resever.titleLabel.font=[UIFont systemFontOfSize:14];
+}
+#pragma mark - 预定按钮
+-(void)reserveTouch{
+    [self.delegate turnToReservePage:self.home];
 }
 @end

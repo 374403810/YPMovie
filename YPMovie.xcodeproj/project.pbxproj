@@ -32,6 +32,26 @@
 		180915851EAA311A001902DD /* TLCityPickerSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809157F1EAA311A001902DD /* TLCityPickerSearchResultController.m */; };
 		180A81471EB8918A00A62946 /* YPHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A81461EB8918A00A62946 /* YPHomeDetailViewController.m */; };
 		180A814F1EB8C95F00A62946 /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 180A814E1EB8C95F00A62946 /* arrow1.png */; };
+		180CEC581EB9C26D00CCBC9A /* YPHomeReserveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC571EB9C26D00CCBC9A /* YPHomeReserveViewController.m */; };
+		180CEC781EBA128700CCBC9A /* seats 0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180CEC5A1EBA128700CCBC9A /* seats 0.plist */; };
+		180CEC791EBA128700CCBC9A /* seats 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180CEC5B1EBA128700CCBC9A /* seats 1.plist */; };
+		180CEC7A1EBA128700CCBC9A /* seats 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180CEC5C1EBA128700CCBC9A /* seats 2.plist */; };
+		180CEC7B1EBA128700CCBC9A /* seats 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180CEC5D1EBA128700CCBC9A /* seats 3.plist */; };
+		180CEC7C1EBA128700CCBC9A /* seats 4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180CEC5E1EBA128700CCBC9A /* seats 4.plist */; };
+		180CEC7D1EBA128700CCBC9A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC601EBA128700CCBC9A /* UIView+Extension.m */; };
+		180CEC7E1EBA128700CCBC9A /* ZFAppLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC621EBA128700CCBC9A /* ZFAppLogoView.m */; };
+		180CEC7F1EBA128700CCBC9A /* ZFCenterLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC641EBA128700CCBC9A /* ZFCenterLineView.m */; };
+		180CEC801EBA128700CCBC9A /* ZFHallLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC661EBA128700CCBC9A /* ZFHallLogoView.m */; };
+		180CEC811EBA128700CCBC9A /* ZFIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC681EBA128700CCBC9A /* ZFIndicatorView.m */; };
+		180CEC821EBA128700CCBC9A /* ZFRowIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC6A1EBA128700CCBC9A /* ZFRowIndexView.m */; };
+		180CEC831EBA128700CCBC9A /* ZFSeatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC6C1EBA128700CCBC9A /* ZFSeatButton.m */; };
+		180CEC841EBA128700CCBC9A /* ZFSeatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC6E1EBA128700CCBC9A /* ZFSeatModel.m */; };
+		180CEC851EBA128700CCBC9A /* ZFSeatSelectionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC711EBA128700CCBC9A /* ZFSeatSelectionTool.m */; };
+		180CEC861EBA128700CCBC9A /* ZFSeatSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC731EBA128700CCBC9A /* ZFSeatSelectionView.m */; };
+		180CEC871EBA128700CCBC9A /* ZFSeatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC751EBA128700CCBC9A /* ZFSeatsModel.m */; };
+		180CEC881EBA128700CCBC9A /* ZFSeatsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC771EBA128700CCBC9A /* ZFSeatsView.m */; };
+		180CEC8B1EBA144000CCBC9A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CEC8A1EBA144000CCBC9A /* MBProgressHUD.m */; };
+		180CEC8D1EBA212D00CCBC9A /* shopping.png in Resources */ = {isa = PBXBuildFile; fileRef = 180CEC8C1EBA212D00CCBC9A /* shopping.png */; };
 		185ED9B21EB739C8003FE101 /* YPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185ED9B11EB739C8003FE101 /* YPHomeTableViewCell.m */; };
 		185ED9B51EB78513003FE101 /* YPHomeSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185ED9B41EB78513003FE101 /* YPHomeSectionTableViewCell.m */; };
 		185ED9B71EB78D85003FE101 /* topic.png in Resources */ = {isa = PBXBuildFile; fileRef = 185ED9B61EB78D85003FE101 /* topic.png */; };
@@ -104,6 +124,41 @@
 		180A81451EB8918A00A62946 /* YPHomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeDetailViewController.h; sourceTree = "<group>"; };
 		180A81461EB8918A00A62946 /* YPHomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeDetailViewController.m; sourceTree = "<group>"; };
 		180A814E1EB8C95F00A62946 /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1.png; sourceTree = "<group>"; };
+		180CEC561EB9C26D00CCBC9A /* YPHomeReserveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeReserveViewController.h; sourceTree = "<group>"; };
+		180CEC571EB9C26D00CCBC9A /* YPHomeReserveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeReserveViewController.m; sourceTree = "<group>"; };
+		180CEC5A1EBA128700CCBC9A /* seats 0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 0.plist"; sourceTree = "<group>"; };
+		180CEC5B1EBA128700CCBC9A /* seats 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 1.plist"; sourceTree = "<group>"; };
+		180CEC5C1EBA128700CCBC9A /* seats 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 2.plist"; sourceTree = "<group>"; };
+		180CEC5D1EBA128700CCBC9A /* seats 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 3.plist"; sourceTree = "<group>"; };
+		180CEC5E1EBA128700CCBC9A /* seats 4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 4.plist"; sourceTree = "<group>"; };
+		180CEC5F1EBA128700CCBC9A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		180CEC601EBA128700CCBC9A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		180CEC611EBA128700CCBC9A /* ZFAppLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFAppLogoView.h; sourceTree = "<group>"; };
+		180CEC621EBA128700CCBC9A /* ZFAppLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFAppLogoView.m; sourceTree = "<group>"; };
+		180CEC631EBA128700CCBC9A /* ZFCenterLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCenterLineView.h; sourceTree = "<group>"; };
+		180CEC641EBA128700CCBC9A /* ZFCenterLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCenterLineView.m; sourceTree = "<group>"; };
+		180CEC651EBA128700CCBC9A /* ZFHallLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHallLogoView.h; sourceTree = "<group>"; };
+		180CEC661EBA128700CCBC9A /* ZFHallLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHallLogoView.m; sourceTree = "<group>"; };
+		180CEC671EBA128700CCBC9A /* ZFIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFIndicatorView.h; sourceTree = "<group>"; };
+		180CEC681EBA128700CCBC9A /* ZFIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFIndicatorView.m; sourceTree = "<group>"; };
+		180CEC691EBA128700CCBC9A /* ZFRowIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRowIndexView.h; sourceTree = "<group>"; };
+		180CEC6A1EBA128700CCBC9A /* ZFRowIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRowIndexView.m; sourceTree = "<group>"; };
+		180CEC6B1EBA128700CCBC9A /* ZFSeatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSeatButton.h; sourceTree = "<group>"; };
+		180CEC6C1EBA128700CCBC9A /* ZFSeatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSeatButton.m; sourceTree = "<group>"; };
+		180CEC6D1EBA128700CCBC9A /* ZFSeatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSeatModel.h; sourceTree = "<group>"; };
+		180CEC6E1EBA128700CCBC9A /* ZFSeatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSeatModel.m; sourceTree = "<group>"; };
+		180CEC6F1EBA128700CCBC9A /* ZFSeatSelectionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSeatSelectionConfig.h; sourceTree = "<group>"; };
+		180CEC701EBA128700CCBC9A /* ZFSeatSelectionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSeatSelectionTool.h; sourceTree = "<group>"; };
+		180CEC711EBA128700CCBC9A /* ZFSeatSelectionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSeatSelectionTool.m; sourceTree = "<group>"; };
+		180CEC721EBA128700CCBC9A /* ZFSeatSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSeatSelectionView.h; sourceTree = "<group>"; };
+		180CEC731EBA128700CCBC9A /* ZFSeatSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSeatSelectionView.m; sourceTree = "<group>"; };
+		180CEC741EBA128700CCBC9A /* ZFSeatsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSeatsModel.h; sourceTree = "<group>"; };
+		180CEC751EBA128700CCBC9A /* ZFSeatsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSeatsModel.m; sourceTree = "<group>"; };
+		180CEC761EBA128700CCBC9A /* ZFSeatsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSeatsView.h; sourceTree = "<group>"; };
+		180CEC771EBA128700CCBC9A /* ZFSeatsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSeatsView.m; sourceTree = "<group>"; };
+		180CEC891EBA144000CCBC9A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		180CEC8A1EBA144000CCBC9A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		180CEC8C1EBA212D00CCBC9A /* shopping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopping.png; sourceTree = "<group>"; };
 		185ED9B01EB739C8003FE101 /* YPHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeTableViewCell.h; sourceTree = "<group>"; };
 		185ED9B11EB739C8003FE101 /* YPHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeTableViewCell.m; sourceTree = "<group>"; };
 		185ED9B31EB78513003FE101 /* YPHomeSectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeSectionTableViewCell.h; sourceTree = "<group>"; };
@@ -149,6 +204,8 @@
 				1806F8271EB3769500FE0E07 /* YPHomeViewController.m */,
 				180A81451EB8918A00A62946 /* YPHomeDetailViewController.h */,
 				180A81461EB8918A00A62946 /* YPHomeDetailViewController.m */,
+				180CEC561EB9C26D00CCBC9A /* YPHomeReserveViewController.h */,
+				180CEC571EB9C26D00CCBC9A /* YPHomeReserveViewController.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -193,6 +250,7 @@
 		180915061EA9F3AA001902DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				180CEC8C1EBA212D00CCBC9A /* shopping.png */,
 				180A814E1EB8C95F00A62946 /* arrow1.png */,
 				180665EE1EB8622500D6BF1C /* arrow.png */,
 				185ED9B61EB78D85003FE101 /* topic.png */,
@@ -402,6 +460,7 @@
 		180915721EAA310B001902DD /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				180CEC591EBA128700CCBC9A /* ZFSeats */,
 				180915731EAA311A001902DD /* TLCityPicker */,
 			);
 			path = Libs;
@@ -424,6 +483,45 @@
 				1809157F1EAA311A001902DD /* TLCityPickerSearchResultController.m */,
 			);
 			path = TLCityPicker;
+			sourceTree = "<group>";
+		};
+		180CEC591EBA128700CCBC9A /* ZFSeats */ = {
+			isa = PBXGroup;
+			children = (
+				180CEC5A1EBA128700CCBC9A /* seats 0.plist */,
+				180CEC5B1EBA128700CCBC9A /* seats 1.plist */,
+				180CEC5C1EBA128700CCBC9A /* seats 2.plist */,
+				180CEC5D1EBA128700CCBC9A /* seats 3.plist */,
+				180CEC5E1EBA128700CCBC9A /* seats 4.plist */,
+				180CEC5F1EBA128700CCBC9A /* UIView+Extension.h */,
+				180CEC601EBA128700CCBC9A /* UIView+Extension.m */,
+				180CEC611EBA128700CCBC9A /* ZFAppLogoView.h */,
+				180CEC621EBA128700CCBC9A /* ZFAppLogoView.m */,
+				180CEC631EBA128700CCBC9A /* ZFCenterLineView.h */,
+				180CEC641EBA128700CCBC9A /* ZFCenterLineView.m */,
+				180CEC651EBA128700CCBC9A /* ZFHallLogoView.h */,
+				180CEC661EBA128700CCBC9A /* ZFHallLogoView.m */,
+				180CEC671EBA128700CCBC9A /* ZFIndicatorView.h */,
+				180CEC681EBA128700CCBC9A /* ZFIndicatorView.m */,
+				180CEC691EBA128700CCBC9A /* ZFRowIndexView.h */,
+				180CEC6A1EBA128700CCBC9A /* ZFRowIndexView.m */,
+				180CEC6B1EBA128700CCBC9A /* ZFSeatButton.h */,
+				180CEC6C1EBA128700CCBC9A /* ZFSeatButton.m */,
+				180CEC6D1EBA128700CCBC9A /* ZFSeatModel.h */,
+				180CEC6E1EBA128700CCBC9A /* ZFSeatModel.m */,
+				180CEC6F1EBA128700CCBC9A /* ZFSeatSelectionConfig.h */,
+				180CEC701EBA128700CCBC9A /* ZFSeatSelectionTool.h */,
+				180CEC711EBA128700CCBC9A /* ZFSeatSelectionTool.m */,
+				180CEC721EBA128700CCBC9A /* ZFSeatSelectionView.h */,
+				180CEC731EBA128700CCBC9A /* ZFSeatSelectionView.m */,
+				180CEC741EBA128700CCBC9A /* ZFSeatsModel.h */,
+				180CEC751EBA128700CCBC9A /* ZFSeatsModel.m */,
+				180CEC761EBA128700CCBC9A /* ZFSeatsView.h */,
+				180CEC771EBA128700CCBC9A /* ZFSeatsView.m */,
+				180CEC891EBA144000CCBC9A /* MBProgressHUD.h */,
+				180CEC8A1EBA144000CCBC9A /* MBProgressHUD.m */,
+			);
+			path = ZFSeats;
 			sourceTree = "<group>";
 		};
 		9B420357A25F6D75DBD6E241 /* Frameworks */ = {
@@ -561,15 +659,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180CEC791EBA128700CCBC9A /* seats 1.plist in Resources */,
 				180915161EA9F3AA001902DD /* LaunchScreen.storyboard in Resources */,
+				180CEC781EBA128700CCBC9A /* seats 0.plist in Resources */,
 				180A814F1EB8C95F00A62946 /* arrow1.png in Resources */,
 				18068DE81EB5F158004B255E /* background.png in Resources */,
 				185ED9B71EB78D85003FE101 /* topic.png in Resources */,
 				180915131EA9F3AA001902DD /* Assets.xcassets in Resources */,
+				180CEC7C1EBA128700CCBC9A /* seats 4.plist in Resources */,
+				180CEC8D1EBA212D00CCBC9A /* shopping.png in Resources */,
 				180915111EA9F3AA001902DD /* Main.storyboard in Resources */,
 				18E692531EB37C7600FAA646 /* YPData.json in Resources */,
+				180CEC7A1EBA128700CCBC9A /* seats 2.plist in Resources */,
 				180915801EAA311A001902DD /* CityData.plist in Resources */,
 				180665EF1EB8622500D6BF1C /* arrow.png in Resources */,
+				180CEC7B1EBA128700CCBC9A /* seats 3.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,20 +746,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180CEC7F1EBA128700CCBC9A /* ZFCenterLineView.m in Sources */,
 				180915821EAA311A001902DD /* TLCityGroupCell.m in Sources */,
+				180CEC811EBA128700CCBC9A /* ZFIndicatorView.m in Sources */,
 				185ED9B51EB78513003FE101 /* YPHomeSectionTableViewCell.m in Sources */,
 				180915671EA9F899001902DD /* YPCinemaViewController.m in Sources */,
+				180CEC7E1EBA128700CCBC9A /* ZFAppLogoView.m in Sources */,
+				180CEC581EB9C26D00CCBC9A /* YPHomeReserveViewController.m in Sources */,
+				180CEC881EBA128700CCBC9A /* ZFSeatsView.m in Sources */,
+				180CEC801EBA128700CCBC9A /* ZFHallLogoView.m in Sources */,
 				180915841EAA311A001902DD /* TLCityPickerController.m in Sources */,
 				1806D0B51EB0C8A300FA9005 /* YPHomeBannerView.m in Sources */,
+				180CEC871EBA128700CCBC9A /* ZFSeatsModel.m in Sources */,
+				180CEC7D1EBA128700CCBC9A /* UIView+Extension.m in Sources */,
 				180915521EA9F453001902DD /* main.m in Sources */,
 				180915641EA9F88D001902DD /* YPMeViewController.m in Sources */,
+				180CEC851EBA128700CCBC9A /* ZFSeatSelectionTool.m in Sources */,
 				180915851EAA311A001902DD /* TLCityPickerSearchResultController.m in Sources */,
+				180CEC821EBA128700CCBC9A /* ZFRowIndexView.m in Sources */,
 				1809156A1EA9F8A5001902DD /* YPTicketViewController.m in Sources */,
 				1806F8281EB3769500FE0E07 /* YPHomeViewController.m in Sources */,
 				180915511EA9F453001902DD /* AppDelegate.m in Sources */,
 				185ED9B21EB739C8003FE101 /* YPHomeTableViewCell.m in Sources */,
+				180CEC8B1EBA144000CCBC9A /* MBProgressHUD.m in Sources */,
 				180915811EAA311A001902DD /* TLCity.m in Sources */,
 				180915831EAA311A001902DD /* TLCityHeaderView.m in Sources */,
+				180CEC861EBA128700CCBC9A /* ZFSeatSelectionView.m in Sources */,
+				180CEC831EBA128700CCBC9A /* ZFSeatButton.m in Sources */,
+				180CEC841EBA128700CCBC9A /* ZFSeatModel.m in Sources */,
 				180915611EA9F87A001902DD /* YPMainTabbarViewController.m in Sources */,
 				180A81471EB8918A00A62946 /* YPHomeDetailViewController.m in Sources */,
 				18068DE41EB5DC29004B255E /* YPHomeModel.m in Sources */,

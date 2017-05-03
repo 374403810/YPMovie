@@ -17,6 +17,8 @@
 @property(nonatomic,assign) BOOL              flag;
 
 @property(nonatomic,assign) NSInteger         location;
+
+@property(nonatomic,assign) NSInteger         index;
 @end
 
 @implementation YPHomeBannerView
@@ -65,7 +67,6 @@
     if (bannerArray.count>1) {
         for (int i=0; i<bannerArray.count+2; i++) {
             UIImageView * imageview = [[UIImageView alloc]initWithFrame:CGRectMake(i*self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
-            
             if (i==0) {                         //  添加第一张图（数组最后一张）
                 self.home = bannerArray[bannerArray.count-1];
             }else if (i==bannerArray.count+1){  //  添加最后一张图（数组第一张）
@@ -79,7 +80,7 @@
             [self.scrollview addSubview:imageview];
             
             //  添加点击手势
-            UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap)];
+            UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapTouch)];
             imageview.userInteractionEnabled=YES;
             [imageview addGestureRecognizer:tap];
         }
@@ -89,7 +90,7 @@
         [self.scrollview addSubview:imageview];
         
         //  添加点击手势
-        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap)];
+        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapTouch)];
         imageview.userInteractionEnabled=YES;
         [imageview addGestureRecognizer:tap];
     }
@@ -104,6 +105,7 @@
 
 #pragma mark - UIScrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    self.index=self.scrollview.contentOffset.x/self.frame.size.width;
     if (self.flag) {
         if (self.scrollview.contentOffset.x<self.location) {// 向右滑
             if (self.scrollview.contentOffset.x<=0) {
@@ -140,15 +142,17 @@
     // 重新寻找坐标
     self.location=self.scrollview.contentOffset.x;
 }
-//页面退出清除timer
--(void)dealloc{
-    [self.timer invalidate];
-    self.timer=nil;
-}
 
 #pragma mark 点击手势
--(void)tap{
-    
+-(void)tapTouch{
+    if (self.index==0) {
+        self.home = self.bannerArray[self.bannerArray.count-1];
+    }else if (self.index==self.bannerArray.count+1){
+        self.home = self.bannerArray[0];
+    }else{
+        self.home = self.bannerArray[self.index-1];
+    }    
+    [self.delegate turnToDetailPage:self.home];
 }
 /*
  // Only override drawRect: if you perform custom drawing.

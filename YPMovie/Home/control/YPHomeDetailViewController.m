@@ -10,6 +10,7 @@
 #import "YPMainTabbarViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <Masonry/Masonry.h>
+#import "YPHomeReserveViewController.h"
 
 @interface YPHomeDetailViewController ()
 
@@ -100,8 +101,8 @@
     price.text=@"49元";
     [backView addSubview:price];
     [price mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(backView.mas_top).offset(60);
         make.right.equalTo(backView.mas_right).offset(-10);
+        make.centerY.equalTo(rating);
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(60);
     }];
@@ -109,19 +110,21 @@
     price.textAlignment=NSTextAlignmentCenter;
     price.font=[UIFont systemFontOfSize:30];
     //8.简介
+//    CGRect rect = [self calculateText:self.home.desc withSize:14];
     UILabel * intro = [[UILabel alloc]init];
     intro.text=[NSString stringWithFormat:@"简介: %@",self.home.desc];
     [backView addSubview:intro];
+    [intro mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(imageview.mas_bottom).offset(10);
+        make.left.equalTo(backView.mas_left).offset(20);
+        make.right.equalTo(backView.mas_right).offset(-20);
+        make.bottom.equalTo(backView.mas_bottom).offset(-50);
+        make.width.mas_equalTo(weakSelf.view.frame.size.width-60);
+    }];
     intro.font=[UIFont systemFontOfSize:14];
     intro.textColor=YPSYSTEMCOLOR(lightGrayColor);
     intro.numberOfLines=0;
-    CGRect rect = [self calculateText:self.home.desc withSize:14];
-    [intro mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(imageview.mas_bottom).offset(20);
-        make.left.equalTo(backView.mas_left).offset(20);
-        make.right.equalTo(backView.mas_right).offset(-20);
-        make.height.mas_equalTo(rect.size.height);
-    }];
+    
     //9.立即预约
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     [backView addSubview:button];
@@ -132,6 +135,7 @@
     button.backgroundColor=YPCOLOR(123, 19, 29);
     [button setTitle:@"立即预定" forState:UIControlStateNormal];
     [button setTitleColor:YPSYSTEMCOLOR(whiteColor) forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(reserveTouch) forControlEvents:UIControlEventTouchUpInside];
     //10.返回按钮
     UIButton * backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [backImageView addSubview:backButton];
@@ -152,6 +156,12 @@
     CGRect rect = [string boundingRectWithSize:CGSizeMake(self.view.frame.size.width-60, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:size]} context:nil];
     return rect;
 }
+-(void)reserveTouch{
+    YPHomeReserveViewController * reserveController = [[YPHomeReserveViewController alloc]init];
+    reserveController.home=self.home;
+    [self.navigationController pushViewController:reserveController animated:YES];
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     self.tabBarController.tabBar.hidden=YES;//隐藏tabbar
 }
